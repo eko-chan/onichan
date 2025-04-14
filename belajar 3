@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Memancing untuk Semua Kalangan</title>
+    <style>
+        /* CSS Styling */
+        :root {
+            --primary-color: #1a6fc9;
+            --secondary-color: #0a4d8c;
+            --accent-color: #f5a623;
+            --light-color: #e6f7ff;
+            --dark-color: #0d2b4e;
+            --text-color: #333;
+            --light-text: #f8f8f8;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2, h3 {
+            color: var(--secondary-color);
+        }
+        
+        h2 {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .sub-section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: var(--light-color);
+            border-radius: 6px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+        
+        th {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        .read-more {
+            font-style: italic;
+            margin-top: 1rem;
+        }
+        
+        .read-more a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .read-more a:hover {
+            text-decoration: underline;
+        }
+        
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Panduan Memancing untuk Semua Kalangan</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#tips">Tips Memancing</a></li>
+            <li><a href="#pancing">Pancing yang Sesuai</a></li>
+            <li><a href="#cuaca">Perkiraan Cuaca</a></li>
+            <li><a href="#cara">Cara Memancing</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="tips">
+            <h2>Tips Memancing</h2>
+            
+            <div class="sub-section">
+                <h3>Untuk Pemancing Pemula</h3>
+                <p>Memancing bisa menjadi kegiatan yang menyenangkan jika Anda mengetahui dasar-dasarnya. Berikut beberapa tips untuk pemula:</p>
+                <ul>
+                    <li>Mulailah dengan peralatan sederhana - joran spinning dengan reel berukuran sedang</li>
+                    <li>Pelajari cara mengikat simpul yang kuat untuk menghubungkan kail dengan tali pancing</li>
+                    <li>Gunakan umpan alami seperti cacing atau udang kecil untuk hasil terbaik</li>
+                    <li>Hindari memancing saat matahari terik - ikan lebih aktif di pagi dan sore hari</li>
+                    <li>Bersabarlah - memancing membutuhkan waktu dan ketekunan</li>
+                </ul>
+                <div class="read-more">
+                    <a href="https://www.example.com/tips-pemula" target="_blank">Baca lebih lanjut tentang tips untuk pemancing pemula →</a>
+                </div>
+            </div>
+            
+            <div class="sub-section">
+                <h3>Untuk Pemancing Berpengalaman</h3>
+                <p>Untuk Anda yang sudah berpengalaman, berikut beberapa tips untuk meningkatkan teknik memancing:</p>
+                <ul>
+                    <li>Pelajari pola migrasi ikan di daerah Anda sesuai musim</li>
+                    <li>Eksperimen dengan berbagai teknik casting untuk mencapai spot yang sulit</li>
+                    <li>Gunakan sonar atau fish finder untuk melacak gerakan ikan</li>
+                    <li>Pelajari cara membaca kondisi air - warna, arus, dan suhu</li>
+                    <li>Musim semi: Fokus pada area dangkal di mana ikan mencari makan setelah musim dingin</li>
+                    <li>Musim panas: Cari ikan di perairan yang lebih dalam dan lebih dingin</li>
+                    <li>Musim gugur: Ikan aktif mencari makan sebelum musim dingin</li>
+                    <li>Musim dingin: Teknik memancing es bisa sangat produktif</li>
+                </ul>
+                <div class="read-more">
+                    <a href="https://www.example.com/tips-advanced" target="_blank">Baca lebih lanjut tentang teknik untuk pemancing berpengalaman →</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="pancing">
+            <h2>Pancing yang Sesuai</h2>
+            
+            <h3>Rekomendasi Berdasarkan Cuaca</h3>
+            <table>
+                <tr>
+                    <th>Kondisi Cuaca</th>
+                    <th>Jenis Pancing</th>
+                    <th>Umpan yang Direkomendasikan</th>
+                </tr>
+                <tr>
+                    <td>Cerah</td>
+                    <td>Spinning rod medium-light</td>
+                    <td>Umpan permukaan, popper, crankbait</td>
+                </tr>
+                <tr>
+                    <td>Mendung</td>
+                    <td>Baitcasting rod medium-heavy</td>
+                    <td>Spinnerbait, jig, soft plastic</td>
+                </tr>
+                <tr>
+                    <td>Hujan Ringan</td>
+                    <td>Spinning rod medium</td>
+                    <td>Worm, leech imitator</td>
+                </tr>
+                <tr>
+                    <td>Berangin</td>
+                    <td>Surf rod panjang</td>
+                    <td>Umpan berat seperti spoon atau bucktail</td>
+                </tr>
+            </table>
+            
+            <h3>Rekomendasi Berdasarkan Bulan</h3>
+            <table>
+                <tr>
+                    <th>Bulan</th>
+                    <th>Jenis Ikan Aktif</th>
+                    <th>Teknik Terbaik</th>
+                </tr>
+                <tr>
+                    <td>Januari-Februari</td>
+                    <td>Ikan dasar (kerapu, kakap)</td>
+                    <td>Bottom fishing dengan umpan hidup</td>
+                </tr>
+                <tr>
+                    <td>Maret-Mei</td>
+                    <td>Ikan pelagis (tenggiri, tuna)</td>
+                    <td>Trolling, jigging</td>
+                </tr>
+                <tr>
+                    <td>Juni-Agustus</td>
+                    <td>Ikan karang (baronang, kuwe)</td>
+                    <td>Light tackle, umpan kecil</td>
+                </tr>
+                <tr>
+                    <td>September-November</td>
+                    <td>Ikan predator (GT, tenggiri)</td>
+                    <td>Popping, stickbait</td>
+                </tr>
+                <tr>
+                    <td>Desember</td>
+                    <td>Ikan dasar (kerapu, kakap)</td>
+                    <td>Bottom fishing, slow jigging</td>
+                </tr>
+            </table>
+            
+            <div class="read-more">
+                <a href="https://www.example.com/pilihan-pancing" target="_blank">Pelajari lebih detail tentang memilih pancing yang tepat →</a>
+            </div>
+        </section>
+        
+        <section id="cuaca">
+            <h2>Perkiraan Cuaca</h2>
+            <p>Cuaca memainkan peran penting dalam kesuksesan memancing. Berikut beberapa faktor cuaca yang perlu diperhatikan:</p>
+            
+            <h3>Kondisi Ideal untuk Memancing</h3>
+            <ul>
+                <li><strong>Tekanan udara:</strong> Tekanan stabil atau perlahan naik (1010-1020 hPa) biasanya yang terbaik</li>
+                <li><strong>Suhu air:</strong> Bervariasi tergantung spesies, tetapi perubahan suhu yang tiba-tiba mengurangi aktivitas ikan</li>
+                <li><strong>Angin:</strong> Angin ringan (5-15 km/jam) membantu menyamarkan kehadiran pemancing</li>
+                <li><strong>Cahaya:</strong> Kondisi mendung seringkali lebih baik daripada matahari terik</li>
+                <li><strong>Hujan ringan:</strong> Dapat merangsang aktivitas makan ikan</li>
+            </ul>
+            
+            <h3>Sumber Informasi Cuaca</h3>
+            <p>Selalu periksa ramalan cuaca sebelum memancing:</p>
+            <ul>
+                <li><a href="https://www.bmkg.go.id" target="_blank">BMKG - Badan Meteorologi Klimatologi dan Geofisika</a></li>
+                <li><a href="https://www.windy.com" target="_blank">Windy - Prakiraan angin dan gelombang</a></li>
+                <li><a href="https://www.fishweather.com" target="_blank">FishWeather - Khusus untuk pemancing</a></li>
+            </ul>
+            
+            <div class="read-more">
+                <a href="https://www.example.com/cuaca-memancing" target="_blank">Pelajari lebih lanjut tentang membaca tanda-tanda cuaca untuk memancing →</a>
+            </div>
+        </section>
+        
+        <section id="cara">
+            <h2>Cara Memancing</h2>
+            
+            <div class="sub-section">
+                <h3>Dasar-Dasar Memancing untuk Pemula</h3>
+                <ol>
+                    <li><strong>Persiapan peralatan:</strong> Pastikan joran, reel, dan tali pancing dalam kondisi baik</li>
+                    <li><strong>Pemilihan umpan:</strong> Sesuaikan dengan jenis ikan target</li>
+                    <li><strong>Mengikat kail:</strong> Pelajari simpul Palomar atau Improved Clinch untuk ikatan kuat</li>
+                    <li><strong>Teknik casting:</strong> Latih gerakan dasar untuk mencapai target</li>
+                    <li><strong>Merasakan gigitan:</strong> Belajar membedakan antara gigitan ikan dan hambatan bawah air</li>
+                    <li><strong>Setting hook:</strong> Teknik tepat saat ikan menggigit umpan</li>
+                    <li><strong>Fighting fish:</strong> Cara mengendalikan ikan tanpa memutus tali</li>
+                    <li><strong>Landing fish:</strong> Teknik aman mengangkat ikan ke darat/perahu</li>
+                </ol>
+            </div>
+            
+            <div class="sub-section">
+                <h3>Teknik Lanjutan untuk Pemancing Berpengalaman</h3>
+                <ul>
+                    <li><strong>Jigging:</strong> Teknik vertikal dengan umpan buatan</li>
+                    <li><strong>Trolling:</strong> Menarik umpan di belakang perahu yang bergerak</li>
+                    <li><strong>Popping:</strong> Menggunakan umpan permukaan untuk ikan predator</li>
+                    <li><strong>Fly fishing:</strong> Teknik khusus menggunakan umpan ringan</li>
+                    <li><strong>Surf casting:</strong> Memancing dari pantai dengan jarak jauh</li>
+                    <li><strong>Deep dropping:</strong> Teknik untuk ikan dasar di perairan sangat dalam</li>
+                </ul>
+            </div>
+            
+            <div class="read-more">
+                <a href="https://www.example.com/teknik-memancing" target="_blank">Pelajari berbagai teknik memancing secara mendalam →</a>
+            </div>
+        </section>
+        
+        <section id="galeri">
+            <h2>Galeri Memancing</h2>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18" alt="Pemancing di danau saat matahari terbit">
+                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288" alt="Umpan memancing alami">
+                <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401" alt="Teknik casting yang benar">
+                <img src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e" alt="Ikan hasil tangkapan">
+                <img src="https://images.unsplash.com/photo-1519683109079-d5f539e1542f" alt="Memancing di laut lepas">
+                <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b" alt="Perlengkapan memancing lengkap">
+            </div>
+            
+            <div class="read-more">
+                <a href="https://www.example.com/galeri-lengkap" target="_blank">Lihat galeri foto memancing lebih lengkap →</a>
+            </div>
+        </section>
+        
+        <section id="kontak">
+            <h2>Kontak Kami</h2>
+            <p>Punya pertanyaan atau saran? Silakan isi formulir berikut:</p>
+            
+            <form>
+                <div class="form-group">
+                    <label for="name">Nama Lengkap:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subjek:</label>
+                    <select id="subject" name="subject">
+                        <option value="pertanyaan">Pertanyaan</option>
+                        <option value="saran">Saran</option>
+                        <option value="kerjasama">Penawaran Kerjasama</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Panduan Memancing untuk Semua Kalangan. Semua hak dilindungi.</p>
+        <p>Dibangun dengan ♥ untuk komunitas pemancing Indonesia</p>
+    </footer>
+</body>
+</html>
